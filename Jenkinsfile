@@ -13,7 +13,7 @@ pipeline{
 			steps{ sh 'mvn test'}
 			}
 		stage('Generate Test Report'){
-			steps{ junit 'target/surefire-report/*.xml'
+			steps{ junit 'target/surefire-reports/*.xml'
 			}}
 		}
 	post{
